@@ -1,4 +1,4 @@
-# Milestone 2 - Key Points
+# Key points of papers
 
 [THE IMPACT OF ECONOMIC EVENTS ON STOCK MARKET RETURNS: EVIDENCE FROM INDIA](https://archive.aessweb.com/index.php/5002/article/view/2011/3206)
 
