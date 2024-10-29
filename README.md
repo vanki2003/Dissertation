@@ -1,6 +1,10 @@
 # Dissertation
 *"It's that time of the degree"*
 
+# To-do
+- [ ] Summaries all papers into 1 paragraph
+- [ ] Write literature review for (10/11). Be sure to send it on that day
+
 # Outline/overview
 1\. Theoretical Foundations and Context
 ---------------------------------------
