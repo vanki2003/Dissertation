@@ -58,3 +58,26 @@ Additional Considerations
 -   **Data Sources for Maltese News and Stock Prices:** Since Malta is a smaller market, ensure you have reliable and accessible data sources for both news articles and historical stock prices.
 -   **Temporal Alignment in Data Collection:** Collecting time-stamped news data and matching it with stock price fluctuations requires precise alignment. Ensure that the news data you use has timestamps that allow for effective event-study design or real-time analysis.
 -   **Interdisciplinary Insights:** Combining finance, psychology (for investor sentiment), and machine learning perspectives will give a broader understanding of how news can influence stock prices and predictive accuracy.
+
+# Note for lit review
+### Read in order: 
+
+- abstract
+
+- conclusion/results 
+
+- discussions
+
+- literature review (other research to form their understanding)
+
+### Optional reading if you want more infomation:
+
+- method: why, how, how long, where and type of research was done
+
+- numbers and graphs
+
+
+
+### Summarise:
+
+- Write concise main points and themes
