@@ -129,14 +129,26 @@ ___
 * Utilized event study methodology
 * Noted that small- and median-cap firms were more heavily affected by the crisis compared to large-cap firms
 * Encouraged further research to comprehensively examine the outcomes and repercussions of the crisis, including its effects on global stock markets and the broader geopolitical landscape
-___
-# Tabulated Format
 
-| Paper Title and Link | Key Findings | Methodology |
-|----------------------|--------------|-------------|
-| [THE IMPACT OF ECONOMIC EVENTS ON STOCK MARKET RETURNS: EVIDENCE FROM INDIA](https://archive.aessweb.com/index.php/5002/article/view/2011/3206) | - Economic events significantly affect stock market returns <br> - Unexpected events have a greater impact <br> - Macroeconomic factors and information-based trading influence prices <br> - US Federal Reserve announcements have limited impact on Indian stock returns | - Examination of 13 economic crises and 5 bank frauds (2008-2018) <br> - Regression analysis |
-| [Impact of Macroeconomic Factors and Political Events on the Market Index Returns at Palestine and Amman Stock Markets (2011–2017)](https://deliverypdf.ssrn.com/delivery.php?ID=803090114088007108005121101068028103016052085015079029126116071027126070064115118030006052013006037046016118078068004089114012048011066061044002098021124102111102025091015052086118007014070099121123114091100076080096112014077067092105098020102121111098&EXT=pdf&INDEX=TRUE) | - CPI, GDP, and political events significantly impact stock returns <br> - Study suggests inefficiency of Palestine and Amman stock markets <br> - Encouragement for wider macroeconomic factor study | - Event study methodology <br> - Analysis of time series monthly data |
-| [Stock Closing Price Prediction using Machine Learning Techniques](https://www.sciencedirect.com/science/article/pii/S1877050920307924?fr=RR-2&ref=pdf_download&rr=85dbf0b53cfe4be7) | - Use of ANN and RF for stock price prediction <br> - New variables created for model training <br> - ANN showed better prediction accuracy <br> - Future recommendation for deep learning models | - Collection of stock data from Yahoo Finance (10-year period) <br> - Creation of new variables for training <br> - Comparison of ANN and RF prediction accuracy <br> - ANN gives better prediction of stock prices as compared to RF|
-| [Comparison of Support Vector Machine (SVM) and Linear Regression (LR) for Stock Price Prediction](https://ieeexplore.ieee.org/document/10381982) | - Comparison of SVM and LR for stock price prediction <br> - LR outperformed SVM <br> - Data split affects prediction accuracy <br> - Suggestions for future research on deep learning algorithms | - Data collection from Yahoo Finance (9-year period) <br> - Manual data cleaning and normalization <br> - Comparison of RMSE for different data split scenarios |
-| [Russia–Ukraine crisis: The effects on the European stock market](https://onlinelibrary.wiley.com/doi/epdf/10.1111/eufm.12386) | - Geopolitical crises negatively impact European stock returns <br> - Small and median-cap firms more heavily affected <br> - Impact extends beyond direct participants in the crisis | - Utilization of event study methodology <br> - Examination of STOXX Europe 600 index firms <br> - Analysis of abnormal returns surrounding crisis events |
-___
+### News sentiment and international equity markets during BREXIT period: A textual and connectedness analysis
+
+* analysed over 34000 news articles and categorised them into 3 clusters (positive, negative and neutral)
+* used time varying connectedness of Diebold and Yilmaz
+* no differentiation was made between positive and negative sentiment in news articles
+* scope of analysis could be broadened to largere equities such as bonds
+* 5 year timeframe
+* spillover increased when articles were on topics relevant to investors
+* news sentiment can be used as a good indicator of the financial markets during times of higher uncertainty
+* financial market sentiment in news articles are better indicators rather than general ones
+* investors saw brexit as a smaller threat to EU-based companies and therefore, less threat for EU economies
+* estimating spillover effects couild capture market movements as well as market structre in terms of returns
+
+### Stock market prediction using machine learning classifiers and social media, news
+* markets can be driven by volitle factors being microblogs and news
+* predict accuracy for 10 subsequent days
+* feature selections and spam tweets resuction were performed
+* highest prediciton score was achieved using social media and financial news
+* RF was found to be consistent and achieving its highest accuracy
+* social media overall has more influence on stock price prediciton
+* positive effect on prediciton performance when applying feature selection and spam tweet reduction
+* other social media data could be used to compare effects (facebook)
