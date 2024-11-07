@@ -148,7 +148,11 @@ ___
 * predict accuracy for 10 subsequent days
 * feature selections and spam tweets resuction were performed
 * highest prediciton score was achieved using social media and financial news
-* RF was found to be consistent and achieving its highest accuracy
+* RF was found to be consistent and achieving its highest accuracy in social media, financial news
 * social media overall has more influence on stock price prediciton
 * positive effect on prediciton performance when applying feature selection and spam tweet reduction
 * other social media data could be used to compare effects (facebook)
+* RF also works well since the dataset had a mix of numerical and categorical features
+
+### The effect of internation media news on the global stock market
+* 
