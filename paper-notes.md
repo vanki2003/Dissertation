@@ -163,3 +163,36 @@ ___
 * The influence of news sentiment grew stronger after the 2008 financial crisis, especially in emerging markets relative to developed ones.
 * The effect on stock markets is mitigated by recent deglobalization trends and the COVID-19 pandemic.
 * Robust regressions, alternative sentiment and return estimation methods, and exogenous shocks (e.g., World Cup Soccer Matches) confirm the study’s findings.
+
+### News sentiment and company reports impact on stock returns
+- **Objective**: Analyzes the incremental effect of sentiment from MD&A sections in 10-K and 10-Q reports on predicting next-quarter stock returns.
+  
+- **Data**: 
+  - U.S.-based companies' filings over the past 20 years.
+  - MD&A sections extracted with regular expressions for accuracy.
+
+- **Sentiment Scoring**: 
+  - TF-IDF assigns weights to words in specific emotional categories from the Harvard IV-4 General Inquirer.
+  - Scores for each sentiment category are calculated by summing these weights.
+
+- **Modeling Approach**:
+  - CatBoost model tested with and without sentiment features, using AUC for evaluation.
+  - Binary classification used for robustness; regression models avoided.
+
+- **Findings**:
+  - Model significantly outperforms random guessing.
+  - Specific categories (e.g., “Weak & Underst”) are more informative than general positive/negative scores.
+
+- **Future Research**:
+  - Consider incorporating accounting fundamentals to refine the model.
+  - Explore other dictionaries for financial sentiment beyond positive/negative categories.
+
+- **Data and Extraction Challenges**:
+  - Missing quarterly reports, possibly due to SEC data issues.
+  - MD&A extraction needs improvement due to varying keywords and section labels.
+  - HTML unavailability in some filings complicates parsing.
+
+- Weak emotional category tops the ranking, outweighing the importances of all previous quarters' returns.
+- **Adding sector and month features was explored to enhance model performance.**
+- Sector feature notably improves the model, pushing the AUC above 0.56.
+- Month feature has a minimal impact, adding just 0.4 percentage points over the sentiment-augmented model.
