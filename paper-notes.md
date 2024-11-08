@@ -196,3 +196,48 @@ ___
 - **Adding sector and month features was explored to enhance model performance.**
 - Sector feature notably improves the model, pushing the AUC above 0.56.
 - Month feature has a minimal impact, adding just 0.4 percentage points over the sentiment-augmented model.
+
+### How does Chinese stick market react to breaking news about covid-19?
+- period was 2020-2023
+- event study method from first declaration to classifying to catrgory B
+- The impact of negative news was generally stronger than that of positive news.
+- overall intensity of reactions to bad news is stronger than that to good news
+- Small-sized stocks react more positively to good news and more negatively to bad news (market level)
+- Materials, health care, and energy sectors experienced positive impacts during the pandemic.
+- Consumer discretionary, utilities, and real estate sectors were the most adversely affected by COVID-19 in China.
+- Sectoral reactions aligned with COVID-19 profitability patterns, with sectors benefiting from pandemic-driven demand performing better
+- Implications for Investors:
+   - For Small Firms: Special attention should be given to COVID-19 news, especially negative announcements.
+- Methodology Constraints: The event study methodology may yield different results with varied event windows or sample periods. Future studies could expand these parameters.
+- Geographic Scope: This study is China-specific; similar studies in other countries could provide comparative insights.
+
+### Stock market prediction using machine learning tools
+- Investors can now trade easily using internet-connected devices, increasing accessibility and appeal in stock trading.
+- Online trading has transformed how people buy and sell stocks, creating a globally interconnected marketplace and new investment opportunities.
+- Stock markets have become sensitive to social media sentiment and susceptible to cyber-attacks, highlighting the need for secure and adaptive trading frameworks.
+- Studies were analyzed based on the type of data input (market data and textual data), data pre-processing approaches, and machine learning techniques used.
+- Common performance metrics used across studies were reviewed, with SVM emerging as the most widely applied SMP technique.
+- Techniques like Artificial Neural Networks (ANN) and Deep Neural Networks (DNN) showed greater accuracy and faster predictions, especially when combining market data with textual data from online sources.
+- Extracting predictive features from financial data is complex due to the variety of predictive variables and the noisy nature of financial datasets, which affects prediction quality.
+- While many SMP methods work in controlled settings, live testing presents difficulties due to real-time price fluctuations, noise, and unpredictable events (e.g., the Knight Capital Tragedy, which caused a $440 million loss).
+- Market volatility, influenced by factors like inflation, uncertainty, and algorithmic trading, heightens risks and complicates price prediction. Examples include flash crashes, where $860 billion was erased from U.S. stock markets within 30 minutes.
+- Political events can also intensify volatility, further complicating market behavior analysis.
+- Social media sentiments significantly impact stock predictions, yet the presence of bots introduces noise, requiring bot detection for more accurate sentiment analysis.
+- Events such as the 2013 Associated Press Twitter hack, which triggered a market crash, highlight the influence and volatility associated with social media data.
+- The rise of fake news and bot-generated data complicates the extraction of reliable insights from social media platforms, making it essential to filter high-quality data for accurate sentiment analysis. (sentiment analysis challenge)
+
+### Financial sentiment analysis: techniques and applications
+- **Evolving Scope of FSA:**
+  - FSA research has expanded significantly with the rise of financial textual data from sources like public news and social media.
+  - Modern FSA examines not only sentiment within financial texts but also how this sentiment influences market predictions.
+
+- **Distinct Goals of FSA Techniques and Applications:**
+  - **FSA Techniques:** Focus on improving sentiment analysis tasks (e.g., targeted aspect-based FSA) using human-annotated data to enhance analytical accuracy.
+  - **FSA Applications:** Use sentiment data for practical financial applications, such as causality and correlation testing, and market forecasting based on market-driven, real-world data.
+
+- **Role of Financial Sentiment as Investor Sentiment Proxy:**
+  - Financial sentiment acts as a stand-in for investor sentiment, which in turn influences market dynamics and reflects collective investor behaviors.
+
+- **Interconnections Among FSA, Investor Sentiment, and Market Sentiment:**
+  - Market sentiment is shaped by aggregated investor sentiment, which is reflected in their investment decisions.
+  - Investor sentiment can be inferred from multiple sources, including financial text sentiment, sentiment surveys, and actual market data, providing a theoretical basis for using diverse data sources for financial forecasting.
