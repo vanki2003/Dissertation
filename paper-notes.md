@@ -241,3 +241,25 @@ ___
 - **Interconnections Among FSA, Investor Sentiment, and Market Sentiment:**
   - Market sentiment is shaped by aggregated investor sentiment, which is reflected in their investment decisions.
   - Investor sentiment can be inferred from multiple sources, including financial text sentiment, sentiment surveys, and actual market data, providing a theoretical basis for using diverse data sources for financial forecasting.
+
+### Using news articles to predict stock price movements
+- **Data Sources and Approach:**
+  - The approach utilizes **two key information sources**: stock prices and related news articles, aligning news articles with stock price movements to analyze their impact.
+  - Stock prices are analyzed within a **specific window of influence**, scoring news articles based on how stock prices move shortly after publication.
+
+- **Classification and Findings:**
+  - A **naïve Bayesian text classifier** was trained to categorize stock price movements into three classes, though the classifier’s predictive accuracy was low.
+  - A significant correlation was observed between news articles and stock price behavior **within a 20-minute window before and after** the news release.
+
+- **Implications and Market Hypothesis Challenge:**
+  - This correlation challenges the **efficient market hypothesis**, suggesting that short-term indicators for predicting stock behavior exist immediately surrounding news publication.
+  - The findings imply that timely analysis of news articles could potentially be leveraged for profitable stock predictions within a brief time frame following their release.
+- **Low Predictive Power Despite Significant Classification Results:**
+  - The classifier showed significant results for stock price alignments in the [-20, 0] and [0, 20] minute windows relative to news release times.
+  - Despite this, the classifier’s overall predictive power remained low, indicating limitations in accurately predicting stock price movements based on news.
+
+- **Possible Reasons for Low Predictive Power:**
+  - **Index Price Volatility Approximation:** The B-value measure used to gauge stock price movement relative to an index was sometimes ineffective. Accurate prediction may require a more realistic and precise index price to better model individual stock movements.
+  - **Redundant News Reporting:** Often, important news is repeatedly reported by multiple sources, but only the first release significantly impacts stock prices, reducing predictive accuracy when subsequent articles are included in the analysis.
+
+These findings suggest that refining index modeling and filtering repeated news reports could enhance predictive accuracy for stock price behavior.
