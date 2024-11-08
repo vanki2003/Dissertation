@@ -154,5 +154,12 @@ ___
 * other social media data could be used to compare effects (facebook)
 * RF also works well since the dataset had a mix of numerical and categorical features
 
-### The effect of internation media news on the global stock market
-* 
+### The effect of international media news on the global stock market
+* 35 countries were used
+* International news sentiment positively influences stock market returns globally.
+* The effect of news sentiment is weaker in countries with higher financial development and stronger financial institutions.
+* Increased access to international media amplifies the effect of news sentiment on stock markets.
+* The impact is more pronounced in countries with high levels of economic openness.
+* The influence of news sentiment grew stronger after the 2008 financial crisis, especially in emerging markets relative to developed ones.
+* The effect on stock markets is mitigated by recent deglobalization trends and the COVID-19 pandemic.
+* Robust regressions, alternative sentiment and return estimation methods, and exogenous shocks (e.g., World Cup Soccer Matches) confirm the study’s findings.
