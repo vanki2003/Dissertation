@@ -261,5 +261,19 @@ ___
 - **Possible Reasons for Low Predictive Power:**
   - **Index Price Volatility Approximation:** The B-value measure used to gauge stock price movement relative to an index was sometimes ineffective. Accurate prediction may require a more realistic and precise index price to better model individual stock movements.
   - **Redundant News Reporting:** Often, important news is repeatedly reported by multiple sources, but only the first release significantly impacts stock prices, reducing predictive accuracy when subsequent articles are included in the analysis.
+- These findings suggest that refining index modeling and filtering repeated news reports could enhance predictive accuracy for stock price behavior.
 
-These findings suggest that refining index modeling and filtering repeated news reports could enhance predictive accuracy for stock price behavior.
+### Sentiment analysis of financial news
+   - The study applies the VADER tool for sentiment classification on highly liquid stocks, categorizing news headlines as negative, neutral, or positive based on their sentiment values.
+   - Sentiment scores are calculated as percentages (positive, neutral, negative) that sum up to 1 per sentence, and a compound score is derived by normalizing lexicon ratings.
+   - Sentiment values for stocks (e.g., Apple) are tabulated and visualized (e.g., in green, red, yellow) for daily analysis.
+   - A compound sentiment score over time helps users assess market sentiment, with negative scores suggesting a potential decrease in stock prices, as seen in visual comparisons of Tesla and Apple.
+   - While sentiment scores are informative, external economic factors (like national and global economic conditions) may occasionally disrupt the correlation between market sentiment and actual stock performance, introducing variability.
+  Here are the key findings from the study:
+   - Minor lexicon adjustments could tailor the methodology for specific market sectors (e.g., pharmacy, healthcare, e-commerce) or stock classifications (e.g., large-cap, mid-cap, small-cap).
+   - Such sector-specific customization could support forecasting trends in stock values within particular industries or market segments.
+   - Here are the key insights from the provided text:
+   - A strong correlation is noted between shifts in sentiment and subsequent stock price changes.
+   - For example, a positive sentiment change for Tesla on 10/26/2019 preceded a stock price increase on the first trading day after the weekend (10/28/2019).
+   - Similarly, a negative sentiment on 10/29/2019 coincided with a price drop, which stabilized the following day as sentiment improved.
+   - While sentiment generally correlates with stock price movement, external factors can influence this relationship. These include the bandwagon effect, market overvaluation corrections, the impact of related markets, and broader economic conditions (both national and global).
