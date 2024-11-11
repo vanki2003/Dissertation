@@ -2,7 +2,7 @@
 *"It's that time of the degree"*
 
 # To-do
-- [ ] Write literature review for (10/11). Be sure to send it on that day
+- [ ] Finish literature review
 
 # Outline/overview
 1\. Theoretical Foundations and Context
