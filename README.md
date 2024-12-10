@@ -2,7 +2,9 @@
 *"It's that time of the degree"*
 
 # To-do
-- [ ] Finish literature review
+- [x] Finish literature review
+- [ ] Finish methodology
+- [ ] Practice finBERT model
 
 # Outline/overview
 1\. Theoretical Foundations and Context
