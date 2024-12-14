@@ -6,12 +6,6 @@
 - [ ] Finish methodology
 - [ ] Practice finBERT model
 
-**Excellent Literature Review!**
-
-Your literature review provides a comprehensive overview of machine learning and sentiment analysis techniques applied to stock prediction. It's clear that you've delved deep into the field, identifying key trends, challenges, and promising approaches. 
-
-**Regarding your methodology, here's a suggested approach incorporating FinBERT:**
-
 ### Proposed Methodology
 
 **1. Data Acquisition:**
