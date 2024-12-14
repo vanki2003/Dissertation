@@ -6,80 +6,58 @@
 - [ ] Finish methodology
 - [ ] Practice finBERT model
 
-# Outline/overview
-1\. Theoretical Foundations and Context
----------------------------------------
+**Excellent Literature Review!**
 
--   **Efficient Market Hypothesis (EMH):** Look into literature on EMH to understand how news dissemination theoretically affects stock prices. According to EMH, any publicly available information (like news articles) should be immediately reflected in stock prices.
--   **Behavioral Finance:** Since EMH may not always hold true, behavioral finance examines the emotional and psychological influences on investors that can create inefficiencies. This is relevant to understanding how investor reactions to news can drive stock prices in ways that might be predictable.
+Your literature review provides a comprehensive overview of machine learning and sentiment analysis techniques applied to stock prediction. It's clear that you've delved deep into the field, identifying key trends, challenges, and promising approaches. 
 
-2\. Impact of News on Stock Prices and Markets
-----------------------------------------------
+**Regarding your methodology, here's a suggested approach incorporating FinBERT:**
 
--   **News Sentiment Analysis:** Study papers that analyze the relationship between news sentiment and stock prices. Many studies use sentiment analysis to determine how positive or negative news can influence stock performance, often measuring the sentiment from news articles, press releases, or social media.
--   **Event Study Methodology:** This approach is commonly used in finance to assess how a specific news event (like a political decision, corporate announcement, or economic news) impacts stock prices around the event date. Event studies can provide a structure for analyzing the immediate effect of certain types of news on the Maltese stock exchange.
+### Proposed Methodology
 
-3\. Machine Learning and Stock Prediction
------------------------------------------
+**1. Data Acquisition:**
 
--   **Natural Language Processing (NLP) in Financial Markets:** NLP is often applied to process and interpret the language used in financial news, which can then be correlated with stock performance. Look for research using NLP to analyze the tone, emotion, and subject matter of news as predictors for stock trends.
--   **Prediction Models Using News Data:** Studies applying machine learning algorithms (e.g., linear regression, decision trees, and neural networks) for stock prediction based on news sentiment are relevant here. Some research explores using these techniques in smaller or less liquid markets, which may be useful given Malta's smaller market size.
+* **Financial News:** Collect a large dataset of financial news articles from reputable sources like Reuters, Bloomberg, and Google News.
+* **Historical Stock Prices:** Gather historical stock price data for the target stocks, ensuring alignment with the news articles' publication dates.
 
-4\. Region-Specific Studies
----------------------------
+**2. Data Preprocessing:**
 
--   **Malta's Financial Market Characteristics:** The Maltese stock exchange is smaller, so look into sources that describe how news affects smaller or less liquid markets specifically, as these often react differently than larger exchanges.
--   **Cultural and Political Influences on Financial Markets in Malta:** Understanding local news context and investor behavior may help you identify unique factors affecting Maltese stocks. This could include Maltese economic policies, the role of EU regulations, or local business news influencing investor confidence and behavior.
+* **Text Cleaning:** Clean and preprocess the news articles to remove noise, such as stop words, punctuation, and irrelevant information.
+* **Tokenization and Sentence Segmentation:** Break down the text into tokens (words or subwords) and sentences.
+* **Sentiment Analysis with FinBERT:**
+    * Fine-tune the pre-trained FinBERT model on a financial sentiment analysis dataset to enhance its performance for your specific task.
+    * Use the fine-tuned model to classify each news article into sentiment categories (e.g., positive, negative, neutral).
+    * Extract sentiment scores or probabilities for each article.
 
-5\. Sentiment Analysis Techniques and Tools
--------------------------------------------
+**3. Feature Engineering:**
 
--   **Sentiment Analysis Tools and Models:** Look at literature discussing various sentiment analysis tools and techniques---like the lexicon-based approach, machine learning models (SVM, Naive Bayes), and neural networks. Some studies compare these methods for accuracy in sentiment detection, especially in financial contexts.
--   **Training and Validation of Sentiment Models:** For prediction accuracy, the quality and specificity of sentiment analysis on news are crucial. Papers that discuss model training, accuracy metrics (such as precision, recall, and F1-score), and validation methods (cross-validation, A/B testing) could provide insight for building or choosing a model that suits your needs.
+* **Technical Indicators:** Calculate relevant technical indicators (e.g., moving averages, RSI, Bollinger Bands) from the historical stock price data.
+* **Sentiment Features:** Incorporate the sentiment scores or probabilities obtained from FinBERT as additional features.
+* **Time-Series Features:** Consider time-series features like time of day, day of week, and month of year.
+* **External Factors:** If applicable, include external factors like economic indicators, interest rates, and geopolitical events.
 
-6\. Limitations and Ethical Considerations
-------------------------------------------
+**4. Model Selection and Training:**
 
--   **Limitations of Predictive Models:** Explore literature on the limitations of using news sentiment in stock predictions, including issues with data quality, news lag, model overfitting, and the potential for self-fulfilling prophecies.
--   **Ethics in Automated Stock Prediction:** Automation in finance, including algorithmic trading, can have ethical and regulatory implications, particularly in smaller markets where news might disproportionately affect stock prices.
+* **Machine Learning Models:** Experiment with various machine learning models, including:
+    * **Traditional Models:** Linear Regression, ARIMA, Random Forest
+    * **Deep Learning Models:** LSTM, GRU, CNN
+    * **Hybrid Models:** Combine techniques like LSTM-CNN or attention mechanisms.
+* **Model Training:** Train the selected model(s) on the prepared dataset, using techniques like cross-validation to assess performance and prevent overfitting.
 
-Types of Sources to Look For
-----------------------------
+**5. Model Evaluation:**
 
-1.  **Academic Journals:** Look for studies in journals specializing in finance, econometrics, machine learning, and NLP. Journals like the *Journal of Financial Economics*, *European Financial Management*, and *IEEE Transactions on Knowledge and Data Engineering* may be useful.
+* **Performance Metrics:** Evaluate the models using relevant metrics like Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and R-squared.
+* **Backtesting:** Conduct backtesting to assess the models' performance on historical data.
+* **Visualization:** Visualize the model predictions and compare them to actual stock prices to gain insights.
 
-2.  **Financial Market Reports and Case Studies on Malta:** Malta-specific case studies, regulatory filings, and financial market reports can provide insight into the structure and unique characteristics of the Maltese stock exchange.
+**Additional Considerations:**
 
-3.  **NLP and Machine Learning Papers:** Research papers on NLP applications in finance and stock prediction, typically found in conferences such as ACL (Association for Computational Linguistics) and ICML (International Conference on Machine Learning).
+* **Data Quality:** Ensure the quality and relevance of the data used for training and testing.
+* **Feature Importance:** Identify the most influential features to understand the model's decision-making process.
+* **Ensemble Methods:** Explore ensemble techniques like bagging and boosting to improve prediction accuracy.
+* **Hyperparameter Tuning:** Optimize the hyperparameters of the models to achieve the best performance.
+* **Regularization:** Employ regularization techniques (e.g., L1, L2) to prevent overfitting.
+* **Ethical Considerations:** Be aware of the ethical implications of using AI for financial predictions, especially regarding potential biases and market manipulation.
 
-4.  **Government and Regulatory Publications:** Maltese regulatory bodies, such as the Malta Financial Services Authority (MFSA), may publish reports on stock exchange trends, investor behavior, or case studies that offer context on the country's financial market structure and dynamics.
-
-Additional Considerations
--------------------------
-
--   **Data Sources for Maltese News and Stock Prices:** Since Malta is a smaller market, ensure you have reliable and accessible data sources for both news articles and historical stock prices.
--   **Temporal Alignment in Data Collection:** Collecting time-stamped news data and matching it with stock price fluctuations requires precise alignment. Ensure that the news data you use has timestamps that allow for effective event-study design or real-time analysis.
--   **Interdisciplinary Insights:** Combining finance, psychology (for investor sentiment), and machine learning perspectives will give a broader understanding of how news can influence stock prices and predictive accuracy.
-
-# Note for lit review
-### Read in order: 
-
-- abstract
-
-- conclusion/results 
-
-- discussions
-
-- literature review (other research to form their understanding)
-
-### Optional reading if you want more infomation:
-
-- method: why, how, how long, where and type of research was done
-
-- numbers and graphs
-
-
-
-### Summarise:
-
-- Write concise main points and themes
+By following these steps and leveraging the power of FinBERT, you can develop a robust and accurate stock prediction model.
+ 
+**Would you like to delve deeper into any specific aspect of this methodology?**
