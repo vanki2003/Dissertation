@@ -4,7 +4,7 @@
 # To-do
 - [x] Finish literature review
 - [ ] Finish methodology
-- [ ] Practice finBERT model
+- [x] Practice finBERT model
 
 ### Proposed Methodology
 
