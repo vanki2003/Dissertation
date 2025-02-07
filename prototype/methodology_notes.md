@@ -144,3 +144,21 @@ r2 = r2_score(actuals_rescaled, predictions_rescaled)
   - Shows training loss over time to diagnose overfitting/underfitting
 
 This CNN model learns patterns in the time series data to predict the next day's closing price based on the previous 10 days of market data and sentiment information.
+
+
+# Results (Open, sentiment_score features)
+
+### LSTM
+Test Loss (MSE): 0.003414042992517352
+Mean Absolute Error (MAE): 17.91974069265318
+R-squared (R2): 0.8847687026927461
+
+### CNN
+Test Loss: 0.00458742119371891
+Mean Absolute Error (MAE): 22.51078424261634
+R-squared (R2): 0.8906733949187364
+
+# CNN-LSTM
+Test Loss (MSE): 0.008622027933597565
+Mean Absolute Error (MAE): 31.990084233504977
+R-squared (R2): 0.7089880138154887
