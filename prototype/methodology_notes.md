@@ -158,7 +158,142 @@ Test Loss: 0.00458742119371891
 Mean Absolute Error (MAE): 22.51078424261634
 R-squared (R2): 0.8906733949187364
 
-# CNN-LSTM
+### CNN-LSTM
 Test Loss: 0.0027609667740762234
 Mean Absolute Error: 0.031072668731212616
 R-squared Score: 0.9099305272102356
+
+# Results of models (using 80:20 split)
+## Malta Independant
+### LSTM (Without Sentiment Variable)
+Test Loss (MSE): 0.0005052234046161175  
+Mean Absolute Error (MAE): 31.609900023181  
+R-squared (R2): 0.8499226893849482
+
+### LSTM (With Sentiment Variable)
+Test Loss (MSE): 0.00017181661678478122  
+Mean Absolute Error (MAE): 14.83542593518725  
+R-squared (R2): 0.9489616321833064
+
+### CNN (Without Sentiment Variable)
+Test Loss: 0.0006718079675920308  
+Mean Absolute Error (MAE): 27.978281632733594  
+R-squared (R2): 0.9925441399012059
+
+### CNN (With Sentiment Variable)
+Test Loss: 0.0003431527002248913  
+Mean Absolute Error (MAE): 21.338293489057783  
+R-squared (R2): 0.9961924779859842
+
+### LSTM-CNN (Without Sentiment Variable)
+Test Loss: 6.752867921022698e-05  
+Mean Absolute Error: 0.005748416297137737  
+R-squared Score: 0.9809779524803162
+
+### LSTM-CNN (With Sentiment Variable)
+Test Loss: 0.0004366027133073658  
+Mean Absolute Error: 0.01857767254114151  
+R-squared Score: 0.8770139217376709
+
+## Malta Business Weekly
+### LSTM (Without Sentiment Variable)
+Test Loss (MSE): 0.004844771232455969  
+Mean Absolute Error (MAE): 22.84890668012559  
+R-squared (R2): 0.8364785544463473
+
+### LSTM (With Sentiment Variable)
+Test Loss (MSE): 0.003929056227207184  
+Mean Absolute Error (MAE): 19.498368677307738  
+R-squared (R2): 0.8673858845904483
+
+### CNN (Without Sentiment Variable)
+Test Loss: 0.0045250775292515755  
+Mean Absolute Error (MAE): 22.37676582544003  
+R-squared (R2): 0.8921590963553585
+
+### CNN (With Sentiment Variable)
+Test Loss: 0.0026346512604504824  
+Mean Absolute Error (MAE): 17.783706468564006  
+R-squared (R2): 0.9375191722991122
+
+### LSTM-CNN (Without Sentiment Variable)
+Test Loss: 0.0024828610476106405  
+Mean Absolute Error: 0.027093494310975075  
+R-squared Score: 0.9190030097961426
+
+### LSTM-CNN (With Sentiment Variable)
+Test Loss: 0.00026312240515835583  
+Mean Absolute Error: 0.012569311074912548  
+R-squared Score: 0.9258814454078674
+
+# Results of models (using time series cross validation)
+## Malta Independent
+### LSTM (Without Sentiment)
+Average Results:
+Average MAE: 0.0645
+Average R2 Score: -0.3523
+
+### LSTM (With Sentiment)
+Average Results:
+Average MAE: 0.1590
+Average R2 Score: -0.1212
+
+### CNN (Without Sentiment)
+Average Results:
+Average MAE: 0.0647
+Average R2 Score: -0.3268
+
+### CNN (With Sentiment)
+Average Results:
+Average MAE: 0.1686
+Average R2 Score: -0.2462
+
+### CNN-LSTM (Without Sentiment)
+Average Results:
+Average MAE: 0.0647
+Average R2 Score: -0.2970
+
+### CNN-LSTM (WitH Sentiment)
+Average Results:
+Average MAE: 0.1616
+Average R2 Score: -0.1008
+
+## Malta Business Weekly
+### LSTM (Without Sentiment)
+Average Results:
+Average MAE: 0.0786
+Average R2 Score: -0.0311
+
+### LSTM (With Sentiment)
+Average Results:
+Average MAE: 0.1918
+Average R2 Score: -0.0367
+
+### CNN (Without Sentiment)
+Average Results:
+Average MAE: 0.0876
+Average R2 Score: -0.1880
+
+### CNN (With Sentiment)
+Average Results:
+Average MAE: 0.1913
+Average R2 Score: -0.0979
+
+### CNN-LSTM (Without Sentiment)
+Average Results:
+Average MAE: 0.0805
+Average R2 Score: -0.0561
+
+### CNN-LSTM (WitH Sentiment)
+Average Results:
+Average MAE: 0.1973
+Average R2 Score: -0.0955
+
+
+# takewaay
+
+Include technical indicators (moving averages, RSI, MACD, volatility).
+
+Add macro factors (interest rates, economic indicators).
+
+Include trading volume as a feature.
