@@ -7,21 +7,21 @@
 - [x] Practice finBERT model
 - [ ] Write Discussion of Results
 
-### Important Structure
+## Important Structure
 
 *  Restate the main result
 *  Compare it to the literature
 *  Explain differences between results and previous researchers' results (maltese papers can work well for this)
 *  Interpret findings to explain the main takeaway message
 
-### Things to Keep in Mind
+## Things to Keep in Mind
 
 *  Explain why I many have got certain results
 *  Do my findings support my hypothesis?
 *  Address limitations (data collection, sample size, methodology)
 *  What should I recommend for future work?
 -----
-### Quick Guide
+## Quick Guide
 
 | Section                                                             | Description                                                                              | Estimated Words |
 | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | --------------- |
@@ -35,7 +35,7 @@
 | 8. Recommendations & Future Work                                    | Suggest model refinements, more data, other sources (e.g. social media), new metrics     | 200–300         |
 | 9. Conclusion                                                       | Final synthesis of findings, contribution to knowledge                                   | 150–200         |
 ----
-### How to Expand 2–3 Bullet Points into 500+ Words
+## How to Expand 2–3 Bullet Points into 500+ Words
 
 #### 🔹 Take Each Metric Seriously
 Don’t just say “MAE dropped by X” — explore:
@@ -73,7 +73,7 @@ This part underperformed. Unpack that:
 - Discuss non-stationarity, data sparsity, sentiment delays, etc.  
 - Discuss the risk of overfitting vs. underfitting  
 ----
-### Discussion Structure Guide
+## Discussion Structure Guide
 
 #### 1. Restate the Purpose Briefly
 Begin with a short reminder of your study’s aim:
